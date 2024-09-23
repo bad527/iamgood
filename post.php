@@ -13,8 +13,8 @@ switch($_POST["sex"]){
 $subject=$_POST["subject"];
 $content=$_POST["content"];
 
-$sql="INSERT INTO `talk`(`name`,`gmail`,`sex`,`subject`,`content`)
-    VALUES ('$name','$gmail','$sex','$subject','$content')";
+$sql="INSERT INTO `talk` (`name`,`gmail`,`sex`,`subject`,`content`) 
+    VALUES('$name','$gmail','$sex','$subject','$content')";
 $result=mysqli_query($link,$sql);
 
 header("location:index.php");
